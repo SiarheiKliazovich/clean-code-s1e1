@@ -16,8 +16,8 @@ body {
     width: 100%;
 }
 
-.header .more_info {
-    font-family: fantasy, cursive;
+.more_info {
+    font-family: fantasy;
 }
 
 @media (max-width:768px) {
@@ -116,7 +116,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,7 +136,7 @@ li > label {
     width: 226px;
 }
 
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px;
 }
 

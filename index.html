@@ -3,52 +3,53 @@
 <head>
   <title>Todo App</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" >
-  <link rel="stylesheet" href="style.css"  media="screen" >
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"  media="screen">
 </head>
 <body>
   <header class="header">
-    <img class="" src="./eisenhower-matrix.jpg" alt="image eisenhower-matrix">
-    <a class="more_info" href="https://goal-life.com/page/method/matrix-eisenhower">
+    <img class="header__image" src="./eisenhower-matrix.jpg" alt="image eisenhower-matrix"/>
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
   </header>
   <main class="main">
-    <section>
-      <label for="new-task">Add Item</label>
-      <div class="main-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+    <section class="section">
+      <label class="title title__label" for="new-task">Add Item</label>
+      <div class="add-task__container">
+        <input id="new-task" class="input inline" type="text">
+        <button class="button">Add</button>
       </div>
     </section>
-    <section>
-      <h3>Todo</h3>
-      <ul id="incompleted">
-        <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete"><img src="./remove.svg" alt="image delete"></button>
+    <section class="section">
+      <h3 class="title">Todo</h3>
+      <ul  id="incompleted" class="list list_incompleted">
+        <li class="list__item">
+          <input type="checkbox" class="input_checkbox">
+          <label class="label label_hover inline">Pay Bills</label>
+          <input type="text" class="input input_hover inline">
+          <!-- <button class="list__item__btn list__item__btn_edit edit">Edit</button> -->
+          <button class="button button_edit">Edit</button>
+          <button class="button button_remove"><img class="img__btn_remove" src="./remove.svg" alt="image remove"/></button>
         </li>
-        <li class="list-item">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete"><img src="./remove.svg" alt="image delete"></button>
+        <li class="list__item item_edit">
+          <input type="checkbox" class="input_checkbox">
+          <label class="label label_hover inline">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="input input_hover inline">
+          <button class="button button_edit">Save</button>
+          <button class="button button_remove"><img class="img__btn_remove" src="./remove.svg" alt="image remove"/></button>
         </li>
-      </ul>
+      </ul >
       </section>
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg" alt="image delete"></button>
+      <section class="section">
+        <h3 class="title">Completed</h3>
+        <ul id="completed" class="list list_completed">
+          <li class="list__item">
+            <input type="checkbox" checked class="input_checkbox">
+            <label class="label label_hover inline">See the Doctor</label>
+            <input type="text" class="input input_hover inline">
+            <button class="button button_edit">Edit</button>
+            <button class="button button_remove"><img class="img__btn_remove" src="./remove.svg" alt="image remove"/></button>
           </li>
         </ul>
       </section>
